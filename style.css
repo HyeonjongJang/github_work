@@ -9,7 +9,6 @@
     /* border: 3px solid green; */
     /* padding: 10px; */
 }
-
 .employees-table {
     border-style: solid;
     /* margin-bottom: 10px; */
@@ -21,18 +20,15 @@
     /* border: 3px solid green; */
     /* padding: 10px; */
 }
-
 body > table{
     width: 80%;
 }
-
 table{
     border-collapse: collapse;
 }
 table.list{
     width:100%;
 }
-
 td, th {
     border: 1px solid #dddddd;
     text-align: left;
@@ -41,7 +37,6 @@ td, th {
 tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
 }
-
 input[type=text], input[type=number] {
     width: 100%;
     padding: 8px 20px;
@@ -51,7 +46,6 @@ input[type=text], input[type=number] {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 input[type=submit] {
     width: 30%;
     background-color: black;
@@ -62,23 +56,19 @@ input[type=submit] {
     border-radius: 5px;
     cursor: pointer;
 }
-
 form div.form-action-buttons{
     text-align: right;
 }
-
 a{
     cursor: pointer;
     text-decoration: underline;
     color: #0000ee;
     margin-right: 4px;
 }
-
 label.validation-error{
     color:   red;
     margin-left: 5px;
 }
-
 .hide{
     display:none;
 }

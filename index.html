@@ -11,7 +11,11 @@
 <body>
 
 	<h1><center>쇼핑몰 회원 관리</center></h1>
-	<hr>
+	<hr>       
+        <div class="header">
+        <h1>Search</h1>
+        <input onkeyup="filter()" type="text" id="value" placeholder="Type to Search">
+      </div>
 			<div class="employee-form">
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
@@ -20,15 +24,15 @@
                     </div>
                     <div>
                         <label>전화번호</label>
-                        <input type="text" name="email" id="email" placeholder="000-0000-0000">
+                        <input type="text" name="callNumber" id="callNumber" placeholder="000-0000-0000">
                     </div>
                     <div>
                         <label>나이</label>
-                        <input type="text" name="salary" id="salary" placeholder="XX세">
+                        <input type="text" name="age" id="age" placeholder="XX세">
                     </div>
                     <div>
                         <label>성별</label>
-                        <input type="text" name="city" id="city" placeholder="남/여">
+                        <input type="text" name="sex" id="sex" placeholder="남/여">
                     </div>
                     <div  class="form-action-buttons">
                         <input type="submit" value="Submit">
@@ -52,6 +56,8 @@
                     </tbody>
                 </table>
         </div>
-    <script src="script.js"></script>
+    <script src="script.js">
+
+    </script>
 </body>
 </html>

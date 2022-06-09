@@ -24,11 +24,11 @@
                     </div>
                     <div>
                         <label>나이</label>
-                        <input type="text" name="salary" id="salary" placeholder="XX세">
+                        <input type="text" name="age" id="age" placeholder="XX세">
                     </div>
                     <div>
                         <label>성별</label>
-                        <input type="text" name="city" id="city" placeholder="남/여">
+                        <input type="text" name="gender" id="gender" placeholder="남/여">
                     </div>
                     <div  class="form-action-buttons">
                         <input type="submit" value="Submit">
@@ -36,6 +36,14 @@
                 </form>
 		</div>
 		<br/>
+        <div class = "searchbox">
+            <div class="header">
+                <h1 id="searchbox_color"><center>검색</center></h1>
+                <input onkeyup="filter()" type="text" id="search_value" placeholder="이름을 입력하시오.">
+                <img class="search_glass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </div>
+        </div>
+        <br/>
 		<div class = "employees-table">
                 <table class="list" id="employeeList">
                     <thead>

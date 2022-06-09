@@ -15,8 +15,8 @@ function readFormData() {
     var formData = {};
     formData["fullName"] = document.getElementById("fullName").value;
     formData["email"] = document.getElementById("email").value;
-    formData["salary"] = document.getElementById("salary").value;
-    formData["city"] = document.getElementById("city").value;
+    formData["age"] = document.getElementById("age").value;
+    formData["gender"] = document.getElementById("gender").value;
     return formData;
 }
 
@@ -28,9 +28,9 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1);
     cell2.innerHTML = data.email;
     cell3 = newRow.insertCell(2);
-    cell3.innerHTML = data.salary;
+    cell3.innerHTML = data.age;
     cell4 = newRow.insertCell(3);
-    cell4.innerHTML = data.city;
+    cell4.innerHTML = data.gender;
     cell4 = newRow.insertCell(4);
     cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
                        <a onClick="onDelete(this)">Delete</a>`;
@@ -39,8 +39,8 @@ function insertNewRecord(data) {
 function resetForm() {
     document.getElementById("fullName").value = "";
     document.getElementById("email").value = "";
-    document.getElementById("salary").value = "";
-    document.getElementById("city").value = "";
+    document.getElementById("age").value = "";
+    document.getElementById("gender").value = "";
     selectedRow = null;
 }
 
@@ -48,14 +48,14 @@ function onEdit(td) {
     selectedRow = td.parentElement.parentElement;
     document.getElementById("fullName").value = selectedRow.cells[0].innerHTML;
     document.getElementById("email").value = selectedRow.cells[1].innerHTML;
-    document.getElementById("salary").value = selectedRow.cells[2].innerHTML;
-    document.getElementById("city").value = selectedRow.cells[3].innerHTML;
+    document.getElementById("age").value = selectedRow.cells[2].innerHTML;
+    document.getElementById("gender").value = selectedRow.cells[3].innerHTML;
 }
 function updateRecord(formData) {
     selectedRow.cells[0].innerHTML = formData.fullName;
     selectedRow.cells[1].innerHTML = formData.email;
-    selectedRow.cells[2].innerHTML = formData.salary;
-    selectedRow.cells[3].innerHTML = formData.city;
+    selectedRow.cells[2].innerHTML = formData.age;
+    selectedRow.cells[3].innerHTML = formData.gender;
 }
 
 function onDelete(td) {
@@ -76,4 +76,16 @@ function validate() {
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
     return isValid;
+}
+
+function search_filter(){
+    var value, Data, name, i;
+
+    value = document.getElementById("search_value").value;
+    Data = readFormData();
+    
+    for(i=0;i<Data.length;i++){
+        name = Data[i].fullName;    
+    }
+    
 }

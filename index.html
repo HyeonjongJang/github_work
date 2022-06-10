@@ -5,29 +5,31 @@
     <title>
         JavaScript CRUD Example Tutorial
     </title>
+    <script src="https://kit.fontawesome.com/a2078e08f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
 
-	<h1><center>쇼핑몰 회원 관리</center></h1>
+	<h1><center><i class="fa-solid fa-address-card"></i> 쇼핑몰 회원 관리</center></h1>
 	<hr>
 			<div class="employee-form">
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>회원 이름</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label><i class="fa-solid fa-file-signature"></i> 회원 이름</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
                         <input type="text" name="fullName" id="fullName" placeholder="홍길동">
                     </div>
                     <div>
-                        <label>전화번호</label>
+                        <label><i class="fa-solid fa-square-phone"></i> 전화번호</label>
                         <input type="text" name="email" id="email" placeholder="000-0000-0000">
                     </div>
                     <div>
-                        <label>나이</label>
+                        <label><i class="fa-solid fa-gauge-simple"></i> 나이</label>
                         <input type="text" name="age" id="age" placeholder="XX세">
                     </div>
                     <div>
-                        <label>성별</label>
+                        <label><i class="fa-solid fa-person"></i> 성별</label>
                         <input type="text" name="gender" id="gender" placeholder="남/여">
                     </div>
                     <div  class="form-action-buttons">
@@ -63,3 +65,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+

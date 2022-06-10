@@ -5,30 +5,32 @@
     <title>
         JavaScript CRUD Example Tutorial
     </title>
+    <script src="https://kit.fontawesome.com/a2078e08f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
 
-	<h1><center>쇼핑몰 회원 관리</center></h1>
+	<h1><center><i class="fa-solid fa-address-card"></i> 쇼핑몰 회원 관리</center></h1>
 	<hr>
 			<div class="employee-form">
                 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
                     <div>
-                        <label>회원 이름</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <label><i class="fa-solid fa-file-signature"></i> 회원 이름</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
                         <input type="text" name="fullName" id="fullName" placeholder="홍길동">
                     </div>
                     <div>
-                        <label>전화번호</label>
+                        <label><i class="fa-solid fa-square-phone"></i> 전화번호</label>
                         <input type="text" name="email" id="email" placeholder="000-0000-0000">
                     </div>
                     <div>
-                        <label>나이</label>
-                        <input type="text" name="salary" id="salary" placeholder="XX세">
+                        <label><i class="fa-solid fa-gauge-simple"></i> 나이</label>
+                        <input type="text" name="age" id="age" placeholder="XX세">
                     </div>
                     <div>
-                        <label>성별</label>
-                        <input type="text" name="city" id="city" placeholder="남/여">
+                        <label><i class="fa-solid fa-person"></i> 성별</label>
+                        <input type="text" name="gender" id="gender" placeholder="남/여">
                     </div>
                     <div  class="form-action-buttons">
                         <input type="submit" value="Submit">
@@ -36,6 +38,14 @@
                 </form>
 		</div>
 		<br/>
+        <div class = "searchbox">
+            <div class="header">
+                <h1 id="searchbox_color"><center>검색</center></h1>
+                <input onkeyup="filter()" type="text" id="search_value" placeholder="이름을 입력하시오.">
+                <img class="search_glass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
+            </div>
+        </div>
+        <br/>
 		<div class = "employees-table">
                 <table class="list" id="employeeList">
                     <thead>
@@ -55,3 +65,5 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+

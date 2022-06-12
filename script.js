@@ -76,7 +76,6 @@ function validate() {
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
     return isValid;
-<<<<<<< HEAD
 }
 
 function search_filter(){
@@ -90,11 +89,9 @@ function search_filter(){
         names = rows[i].cells[0].firstChild.data;
 
         if(names.indexOf(value) > -1){
-            rows[i].style.display = "table";
+            rows[i].style.display = "table-row";
         }else{
             rows[i].style.display = "none";
         }
     }
-=======
->>>>>>> upstream/feature/hyeon
 }

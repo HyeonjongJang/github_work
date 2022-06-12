@@ -88,8 +88,8 @@ label.validation-error{
     border-radius: 8px;
     padding: 10px 12px;
     font-size: 14px;
-  }
-  
+}
+
 .search_glass {
     position : absolute;
     width: 17px;
@@ -109,4 +109,5 @@ label.validation-error{
     padding: 20px;
     margin: auto;
     width: 70%;
+    table-layout: fixed;
 }

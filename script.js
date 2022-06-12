@@ -76,4 +76,25 @@ function validate() {
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
     return isValid;
+<<<<<<< HEAD
+}
+
+function search_filter(){
+    var value, Data, name, i;
+
+    value = document.getElementById("search_value").value;
+    tables = document.getElementById("body_table");
+    console.log(tables.rows.length);
+    for(var i=0;i<tables.rows.length;i++){   
+        var rows = tables.rows;
+        names = rows[i].cells[0].firstChild.data;
+
+        if(names.indexOf(value) > -1){
+            rows[i].style.display = "table";
+        }else{
+            rows[i].style.display = "none";
+        }
+    }
+=======
+>>>>>>> upstream/feature/hyeon
 }

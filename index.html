@@ -3,7 +3,7 @@
 
 <head>
     <title>
-        JavaScript CRUD Example Tutorial
+        쇼핑몰 회원 관리
     </title>
     <script src="https://kit.fontawesome.com/a2078e08f3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
@@ -41,7 +41,7 @@
         <div class = "searchbox">
             <div class="header">
                 <h1 id="searchbox_color"><center>검색</center></h1>
-                <input onkeyup="filter()" type="text" id="search_value" placeholder="이름을 입력하시오.">
+                <input onkeyup="search_filter()" type="text" id="search_value" placeholder="이름을 입력하시오.">
                 <img class="search_glass" src="https://s3.ap-northeast-2.amazonaws.com/cdn.wecode.co.kr/icon/search.png">
             </div>
         </div>
@@ -57,7 +57,7 @@
                             <th>수정/삭제</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody id="body_table">
 
                     </tbody>
                 </table>

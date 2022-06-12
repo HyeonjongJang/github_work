@@ -32,8 +32,8 @@ function insertNewRecord(data) {
     cell4 = newRow.insertCell(3);
     cell4.innerHTML = data.gender;
     cell4 = newRow.insertCell(4);
-    cell4.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-                       <a onClick="onDelete(this)">Delete</a>`;
+    cell4.innerHTML = `<a onClick="onEdit(this)"><i class="fa-solid fa-square-pen"></i>   </a>
+                       <a onClick="onDelete(this)"><i class="fa-solid fa-trash-can"></i> </a>`;
 }
 
 function resetForm() {
@@ -76,6 +76,7 @@ function validate() {
             document.getElementById("fullNameValidationError").classList.add("hide");
     }
     return isValid;
+<<<<<<< HEAD
 }
 
 function search_filter(){
@@ -94,4 +95,6 @@ function search_filter(){
             rows[i].style.display = "none";
         }
     }
+=======
+>>>>>>> upstream/feature/hyeon
 }
